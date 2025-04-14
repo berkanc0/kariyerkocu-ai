@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meslek Önerisi - KariyerKoçu AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Meslek Önerisi</h1>
+      <p>Yapay zekâ destekli meslek seçimi aracı</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>İlgi alanlarına göre sana uygun meslekleri keşfet</h2>
+      <p>Aşağıdaki formu doldur, sana en uygun kariyer yollarını önerelim.</p>
+    </section>
+
+    <form id="career-form">
+      <label for="interests">İlgi Alanların</label>
+      <input type="text" id="interests" name="interests" placeholder="Örn: teknoloji, sanat, sağlık" required />
+
+      <label for="skills">Yeteneklerin</label>
+      <input type="text" id="skills" name="skills" placeholder="Örn: yazılım geliştirme, iletişim, liderlik" required />
+
+      <label for="goals">Kariyer Hedeflerin</label>
+      <textarea id="goals" name="goals" rows="4" placeholder="Örn: global bir şirkette yazılım mühendisi olmak"></textarea>
+
+      <button type="submit">Meslek Önerilerini Göster</button>
+    </form>
+
+    <section id="career-output" style="display: none;">
+      <h3>Yapay Zekâ Destekli Meslek Önerilerin:</h3>
+      <ul id="suggestion-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Berkan Çalışkan | Kariyer Koçu  AI | Tüm hakları saklıdır.</p>
+    </div>
+            <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/67fcef137ef95219100c37df/1ioq0bpc6';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+  </footer>
+
+  <script>
+    const form = document.getElementById("career-form");
+    const output = document.getElementById("career-output");
+    const list = document.getElementById("suggestion-list");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const interests = document.getElementById("interests").value.toLowerCase();
+      const skills = document.getElementById("skills").value.toLowerCase();
+
+      // Basit yapay zeka simülasyonu
+      list.innerHTML = "";
+
+      if (interests.includes("teknoloji") || skills.includes("yazılım")) {
+        list.innerHTML += "<li>Yazılım Geliştirici</li>";
+        list.innerHTML += "<li>Veri Analisti</li>";
+      }
+      if (interests.includes("sanat") || skills.includes("yaratıcılık")) {
+        list.innerHTML += "<li>Grafik Tasarımcı</li>";
+        list.innerHTML += "<li>Dijital İçerik Üreticisi</li>";
+      }
+      if (interests.includes("sağlık")) {
+        list.innerHTML += "<li>Fizyoterapist</li>";
+        list.innerHTML += "<li>Diyetisyen</li>";
+      }
+      if (list.innerHTML === "") {
+        list.innerHTML = "<li>İlgi ve yeteneklerinize göre detaylı analiz yapılması gerekiyor.</li>";
+      }
+
+      output.style.display = "block";
+    });
+  </script>
+</body>
+</html>

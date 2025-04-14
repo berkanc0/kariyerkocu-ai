@@ -1,0 +1,63 @@
+Proje Adı: KariyerKoçu AI (Yapay Zeka Destekli Kariyer Planlama)
+
+# 🧠 KariyerKoçu AI
+
+**KariyerKoçu AI**, yapay zekâ destekli bir web platformudur. Kullanıcıların kariyer planlaması yapmasına yardımcı olmak amacıyla tasarlanmıştır. Site, meslek önerileri, CV değerlendirme ve kariyer haritası gibi temel modüller içerir.
+
+## 🎯 Proje Amacı
+
+Bu proje, kullanıcıların gelecekteki kariyer adımlarını planlamalarını kolaylaştırmak için AI temelli öneriler sunar. Hedef, teknolojiyle desteklenmiş, kişiye özel bir rehberlik deneyimi sağlamaktır.
+
+## 👥 Hedef Kitle
+
+- Lise / üniversite öğrencileri  
+- Yeni mezunlar  
+- Kariyer değiştirmek isteyen profesyoneller  
+- CV'sini geliştirmek isteyen adaylar
+
+## ⚙️ Kullanılan Teknolojiler
+
+- HTML5  
+- CSS3 (Responsive Tasarım Dahil)  
+- JavaScript  
+- Yapay Zekâ senaryoları (OpenAI destekli içerik modeli)  
+- Google Fonts - Inter  
+
+## 🤖 Yapay Zekâ Kullanımı
+
+- **Meslek Önerisi:** Kullanıcının ilgi alanlarına göre yapay zekâdan meslek tahminleri alınır.  
+- **CV Analizi:** Kullanıcının verdiği CV içeriğine göre öneriler sunulur.  
+- **Kariyer Haritası:** Kullanıcının hedeflerine göre yol haritası çizilir.
+
+Yapay zekâdan alınan çıktılar anlamlandırılmış, düzenlenmiş ve kullanıcı dostu hale getirilmiştir.
+
+## 📁 Dosya Yapısı
+/KariyerKocuAI
+├── index.html → Ana Sayfa 
+├── career-suggestion.html → Meslek Önerisi Sayfası 
+├── cv-analyze.html → CV Değerlendirme Sayfası 
+├── career-map.html → Kariyer Haritası Sayfası  
+├── style.css → Ana CSS dosyası (Yapay Zeka Desteği ile hazırlanmış UI tasarımı) 
+├── js/ai-helper.js → AI içerik yönetimi (gerekli JS işlevleri)│
+
+-----------------------------------------------------------------------
+
+## 🖥️ Nasıl Çalıştırılır?
+
+1. Tüm dosyaları tek bir klasörde bulundurunuz.
+2. `index.html` dosyasını bir tarayıcıda açarak başlatabilirsiniz.
+3. Mobil uyumlu yapı sayesinde hem bilgisayarda hem telefonda sorunsuz çalışır.
+
+## 📝 Geliştirici Notları
+
+- Tüm sayfalar arasında geçiş için link yapısı sağlanmıştır.  
+- Yapay zekâ çıktılarında kullanıcı etkileşimi ön planda tutulmuştur.  
+- Basit bir JavaScript işlevi eklendi (AI simülasyonları için).  
+- Proje, akademik sunum ve değerlendirme için hazırlanmıştır.
+
+## 📌 Ekstra Özellikler
+
+- ✅ Responsive Tasarım (mobil uyumlu)
+- ✅ Yapay Zekâ Simülasyonu
+- ✅ Renk Uyumu
+- ✅ HTML/CSS/JS kod düzeni ve yorumlar

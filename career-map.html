@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kariyer Haritası</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Kariyer Haritası</h1>
+      <p>Hedeflerine ulaşmak için yolunu çiz!</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <form id="map-form">
+      <label for="goal">Kariyer Hedefin:</label>
+      <input type="text" id="goal" placeholder="Örn: Yazılım geliştirici" required />
+      <button type="submit">Oluştur</button>
+    </form>
+
+    <div id="roadmap-output"></div>
+  </main>
+
+  <footer>
+    <div class="container">
+    <p>&copy; 2025 Berkan Çalışkan | Kariyer Koçu  AI | Tüm hakları saklıdır.</p>
+    </div>
+            <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/67fcef137ef95219100c37df/1ioq0bpc6';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+  </footer>
+
+  <script>
+    document.getElementById("map-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const goal = document.getElementById("goal").value.toLowerCase();
+      const output = document.getElementById("roadmap-output");
+
+      let response = "";
+
+      if (goal.includes("yazılım")) {
+        response = `<ul>
+          <li>1. Ay: Temel HTML, CSS öğren</li>
+          <li>2. Ay: JavaScript'e başla</li>
+          <li>3. Ay: Proje geliştir</li>
+        </ul>`;
+      } else {
+        response = `<ul>
+          <li>1. Ay: Temel araştırma yap</li>
+          <li>2. Ay: Online kurslara başla</li>
+          <li>3. Ay: Uygulamalı deneyim kazan</li>
+        </ul>`;
+      }
+
+      output.innerHTML = `
+        <h3>Yol Haritan</h3>
+        ${response}
+      `;
+    });
+  </script>
+</body>
+</html>

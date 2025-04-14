@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV Değerlendirme</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>CV Değerlendirme</h1>
+      <p>CV'ni analiz ederek güçlü ve gelişmesi gereken yönlerini öğren!</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <form id="cv-form">
+      <label for="cv-text">CV İçeriğini Buraya Yapıştır:</label>
+      <textarea id="cv-text" rows="10" placeholder="Eğitim, deneyim, beceriler..." required></textarea>
+      <button type="submit">Analiz Et</button>
+    </form>
+
+    <div id="cv-analysis-output"></div>
+  </main>
+
+  <footer>
+    <div class="container">
+        <p>&copy; 2025 Berkan Çalışkan | Kariyer Koçu  AI | Tüm hakları saklıdır.</p>
+    </div>
+            <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/67fcef137ef95219100c37df/1ioq0bpc6';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+  </footer>
+
+  <script>
+    document.getElementById("cv-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const text = document.getElementById("cv-text").value.toLowerCase();
+      const output = document.getElementById("cv-analysis-output");
+
+      let strengths = "";
+      let weaknesses = "";
+
+      if (text.includes("html") || text.includes("css") || text.includes("javascript")) {
+        strengths += "<li>Web geliştirme becerileri mevcut.</li>";
+      } else {
+        weaknesses += "<li>Teknik beceriler eksik görünüyor.</li>";
+      }
+
+      if (text.includes("takım") || text.includes("iletişim")) {
+        strengths += "<li>İyi iletişim ve takım çalışması vurgulanmış.</li>";
+      }
+
+      if (text.length < 200) {
+        weaknesses += "<li>CV çok kısa, daha fazla detay eklenmeli.</li>";
+      }
+
+      output.innerHTML = `
+        <h3>Analiz Sonucu</h3>
+        <strong>Güçlü Yönler:</strong>
+        <ul>${strengths || "<li>Belirgin güçlü yön bulunamadı.</li>"}</ul>
+        <strong>Geliştirilmesi Gereken Yönler:</strong>
+        <ul>${weaknesses || "<li>Belirgin zayıf yön bulunamadı.</li>"}</ul>
+      `;
+    });
+  </script>
+</body>
+</html>
