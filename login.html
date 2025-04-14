@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giriş Yap - KariyerKoçu AI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>KariyerKoçu AI</h1>
+            <nav>
+                <ul>
+                    <a href="index.html" class="btn">Ana Sayfa</a>
+                    <a href="register.html"class="btn">Kayıt Ol</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container auth-container">
+            <h2>Giriş Yap</h2>
+            <form action="dashboard.html" method="POST">
+                <label for="username">Kullanıcı Adı veya E-posta:</label>
+                <input type="text" id="username" name="username" placeholder="Kullanıcı adınızı veya e-posta adresinizi girin" required>
+                
+                <label for="password">Parola:</label>
+                <input type="password" id="password" name="password" placeholder="Parolanızı girin" required>
+                
+                <button type="submit" class="btn">Giriş Yap</button>
+            </form>
+            <p>Hesabınız yok mu? <a href="register.html">Kayıt Olun</a></p>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Berkan Çalışkan | Kariyer Koçu AI | Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+</body>
+</html>
