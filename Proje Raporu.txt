@@ -1,63 +1,97 @@
-Proje Adı: KariyerKoçu AI (Yapay Zeka Destekli Kariyer Planlama)
+===================================================================
+                    KariyerKoçu AI Proje Raporu
+===================================================================
 
-# 🧠 KariyerKoçu AI
+1. Özet
+--------
+KariyerKoçu AI, yapay zekâ destekli kariyer rehberi web sitesi olarak geliştirilmiştir.
+Bu proje, kullanıcıların kişisel kariyer hedeflerine uygun meslek önerileri,
+CV analizleri ve kariyer yol haritası sunmayı amaçlamaktadır.
+Ayrıca, Tawk.to entegrasyonu sayesinde canlı destek hizmetleri de sunulmaktadır.
 
-**KariyerKoçu AI**, yapay zekâ destekli bir web platformudur. Kullanıcıların kariyer planlaması yapmasına yardımcı olmak amacıyla tasarlanmıştır. Site, meslek önerileri, CV değerlendirme ve kariyer haritası gibi temel modüller içerir.
+Projenin canlı hali: https://berkanc0.github.io/kariyerkocu-ai/
 
-## 🎯 Proje Amacı
+-------------------------------------------------------------------
 
-Bu proje, kullanıcıların gelecekteki kariyer adımlarını planlamalarını kolaylaştırmak için AI temelli öneriler sunar. Hedef, teknolojiyle desteklenmiş, kişiye özel bir rehberlik deneyimi sağlamaktır.
+2. Projenin Amacı ve Hedefleri
+----------------------------------
+- Amacı:
+  Kullanıcıların kariyer planlamasında yapay zekâ destekli öneriler ve analizlerle
+  karar verme süreçlerini kolaylaştırmak ve modern, kullanıcı dostu bir platform
+  sunmaktır.
 
-## 👥 Hedef Kitle
+- Hedefler:
+  * Meslek Önerisi: Kullanıcının yetenek ve ilgi alanlarına göre kariyer seçenekleri.
+  * CV Değerlendirme: CV analizleri ve geri bildirim.
+  * Kariyer Haritası: Hedeflere yönelik adımlar ve yetkinlik geliştirme.
+  * Canlı Destek: Tawk.to entegrasyonu ile anlık destek.
+  * Kolay Yayınlama: GitHub Pages üzerinden ücretsiz ve kolay erişim.
 
-- Lise / üniversite öğrencileri  
-- Yeni mezunlar  
-- Kariyer değiştirmek isteyen profesyoneller  
-- CV'sini geliştirmek isteyen adaylar
+-------------------------------------------------------------------
 
-## ⚙️ Kullanılan Teknolojiler
+3. Kullanılan Teknolojiler ve Araçlar
+---------------------------------------
+- HTML5, CSS3 ve JavaScript (Web sayfası yapısı, stil ve dinamik özellikler)
+- Google Fonts (Inter fontu)
+- Tawk.to (Canlı destek entegrasyonu)
+- Visual Studio Code & Live Server (Yerel geliştirme ve test)
+- GitHub & GitHub Pages (Kaynak kod kontrolü ve ücretsiz barındırma)
+- Ek araçlar: Chrome Developer Tools, güvenlik duvarı/antivirüs ayarları
 
-- HTML5  
-- CSS3 (Responsive Tasarım Dahil)  
-- JavaScript  
-- Yapay Zekâ senaryoları (OpenAI destekli içerik modeli)  
-- Google Fonts - Inter  
+-------------------------------------------------------------------
 
-## 🤖 Yapay Zekâ Kullanımı
+4. Uygulama Aşamaları
+-----------------------
+4.1 Tasarım ve Prototip Oluşturma
+   - Projenin temel işlevlerinin belirlenmesi (meslek önerisi, CV değerlendirme,
+     kariyer haritası, canlı destek).
+   - Basit wireframe çizimleri ve kullanıcı dostu tasarım prensipleri uygulanması.
+   - Modern ve okunabilir tipografi ile renk paleti seçimi.
 
-- **Meslek Önerisi:** Kullanıcının ilgi alanlarına göre yapay zekâdan meslek tahminleri alınır.  
-- **CV Analizi:** Kullanıcının verdiği CV içeriğine göre öneriler sunulur.  
-- **Kariyer Haritası:** Kullanıcının hedeflerine göre yol haritası çizilir.
+4.2 Geliştirme Süreci
+   - HTML ve CSS kullanılarak temel sayfa yapısının oluşturulması.
+   - JavaScript ile canlı destek (chat widget) için otomatik yanıt mantığının eklenmesi.
+   - Tawk.to script kodunun, HTML dosyasının </body> etiketi öncesine eklenmesi.
+   - Proje dosyalarının GitHub üzerinden versiyon kontrolü ile takip edilmesi.
 
-Yapay zekâdan alınan çıktılar anlamlandırılmış, düzenlenmiş ve kullanıcı dostu hale getirilmiştir.
+4.3 Test ve Yayınlama
+   - Live Server aracılığıyla yerel testlerin yapılması ve sorun giderilmesi.
+   - Karşılaşılan hataların (“Open a folder or workspace...” gibi) çözülmesi.
+   - GitHub Pages ayarlarının (branch ve root dizin) doğru yapılandırılması.
+   - Yayınlama sonrası https://berkanc0.github.io/kariyerkocu-ai/ adresinden erişim.
 
-## 📁 Dosya Yapısı
-/KariyerKocuAI
-├── index.html → Ana Sayfa 
-├── career-suggestion.html → Meslek Önerisi Sayfası 
-├── cv-analyze.html → CV Değerlendirme Sayfası 
-├── career-map.html → Kariyer Haritası Sayfası  
-├── style.css → Ana CSS dosyası (Yapay Zeka Desteği ile hazırlanmış UI tasarımı) 
-├── js/ai-helper.js → AI içerik yönetimi (gerekli JS işlevleri)│
+-------------------------------------------------------------------
 
------------------------------------------------------------------------
+5. Karşılaşılan Problemler ve Çözümleri
+-----------------------------------------
+5.1 Yerel Sunucu Problemleri
+   - Sorun: Live Server'ın klasör bazlı açılması gerektiği uyarısı.
+   - Çözüm: VS Code'da proje klasörünün açılarak Live Server'ın başlatılması.
 
-## 🖥️ Nasıl Çalıştırılır?
+5.2 Tawk.to Entegrasyonu
+   - Sorun: Tawk.to script kodu çalıştırıldığında canlı destek simgesinin görünmemesi.
+   - Çözüm: Script kodunun doğru şekilde HTML dosyasına yerleştirilmesi ve HTTPS üzerinden
+             erişimin sağlanması.
 
-1. Tüm dosyaları tek bir klasörde bulundurunuz.
-2. `index.html` dosyasını bir tarayıcıda açarak başlatabilirsiniz.
-3. Mobil uyumlu yapı sayesinde hem bilgisayarda hem telefonda sorunsuz çalışır.
+5.3 GitHub Pages Üzerinde Yayınlama
+   - Sorun: 404 hatası alınması.
+   - Çözüm: GitHub Pages ayarlarında doğru branch ve root dizinin seçilmesi; index.html dosyasının
+             kök dizinde bulunduğunun kontrol edilmesi.
 
-## 📝 Geliştirici Notları
+-------------------------------------------------------------------
 
-- Tüm sayfalar arasında geçiş için link yapısı sağlanmıştır.  
-- Yapay zekâ çıktılarında kullanıcı etkileşimi ön planda tutulmuştur.  
-- Basit bir JavaScript işlevi eklendi (AI simülasyonları için).  
-- Proje, akademik sunum ve değerlendirme için hazırlanmıştır.
+6. Sonuç ve Gelecek Çalışmalar
+----------------------------------
+6.1 Sonuçlar:
+   - Kullanıcı dostu ve modern bir arayüz geliştirilmiştir.
+   - Tawk.to entegrasyonu sayesinde ziyaretçilerle anlık iletişim sağlanmaktadır.
+   - GitHub Pages üzerinden ücretsiz ve kolay erişilebilir bir alan adı
+     (https://berkanc0.github.io/kariyerkocu-ai/) ile yayınlanmıştır.
 
-## 📌 Ekstra Özellikler
+6.2 Gelecekteki Çalışmalar:
+   - Yapay zekâ öneri algoritmalarının geliştirilmesi.
+   - Ek özelliklerin (video konferans, gelişmiş raporlama) eklenmesi.
+   - Performans iyileştirmeleri ve güvenlik önlemlerinin artırılması.
+   - Responsive tasarımın güçlendirilerek mobil uyumluluğun sağlanması.
 
-- ✅ Responsive Tasarım (mobil uyumlu)
-- ✅ Yapay Zekâ Simülasyonu
-- ✅ Renk Uyumu
-- ✅ HTML/CSS/JS kod düzeni ve yorumlar
+===================================================================
